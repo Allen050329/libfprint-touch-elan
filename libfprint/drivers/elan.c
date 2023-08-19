@@ -998,7 +998,7 @@ fpi_device_elan_class_init (FpiDeviceElanClass *klass)
   dev_class->full_name = "ElanTech Fingerprint Sensor";
   dev_class->type = FP_DEVICE_TYPE_USB;
   dev_class->id_table = elan_id_table;
-  dev_class->scan_type = FP_SCAN_TYPE_SWIPE;
+  dev_class->scan_type = FP_SCAN_TYPE_PRESS;
 
   img_class->img_open = dev_init;
   img_class->img_close = dev_deinit;
