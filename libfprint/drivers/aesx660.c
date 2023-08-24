@@ -740,7 +740,7 @@ fpi_device_aes_x660_class_init (FpiDeviceAesX660Class *klass)
   FpImageDeviceClass *img_class = FP_IMAGE_DEVICE_CLASS (klass);
 
   dev_class->type = FP_DEVICE_TYPE_USB;
-  dev_class->scan_type = FP_SCAN_TYPE_SWIPE;
+  dev_class->scan_type = FP_SCAN_TYPE_TOUCH;
 
   img_class->img_open = aesX660_dev_init;
   img_class->img_close = aesX660_dev_deinit;

@@ -769,7 +769,7 @@ fpi_device_upektc_img_class_init (FpiDeviceUpektcImgClass *klass)
   dev_class->full_name = "Upek TouchChip Fingerprint Coprocessor";
   dev_class->type = FP_DEVICE_TYPE_USB;
   dev_class->id_table = id_table;
-  dev_class->scan_type = FP_SCAN_TYPE_SWIPE;
+  dev_class->scan_type = FP_SCAN_TYPE_TOUCH;
   dev_class->usb_discover = discover;
 
   img_class->img_open = dev_init;

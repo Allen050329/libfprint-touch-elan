@@ -1547,7 +1547,7 @@ fpi_device_upekts_class_init (FpiDeviceUpektsClass *klass)
   dev_class->full_name = "UPEK TouchStrip";
 
   dev_class->type = FP_DEVICE_TYPE_USB;
-  dev_class->scan_type = FP_SCAN_TYPE_SWIPE;
+  dev_class->scan_type = FP_SCAN_TYPE_TOUCH;
   dev_class->id_table = id_table;
   dev_class->nr_enroll_stages = 3;
 

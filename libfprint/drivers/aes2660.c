@@ -80,7 +80,7 @@ fpi_device_aes2660_class_init (FpiDeviceAes2660Class *klass)
   dev_class->full_name = "AuthenTec AES2660";
   dev_class->type = FP_DEVICE_TYPE_USB;
   dev_class->id_table = id_table;
-  dev_class->scan_type = FP_SCAN_TYPE_SWIPE;
+  dev_class->scan_type = FP_SCAN_TYPE_TOUCH;
 
   img_class->bz3_threshold = 20;
 
