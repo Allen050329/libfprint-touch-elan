@@ -175,7 +175,7 @@ test_device_get_scan_type (void)
   g_autoptr(FptContext) tctx = fpt_context_new_with_virtual_device (FPT_VIRTUAL_DEVICE_IMAGE);
 
   fp_device_open_sync (tctx->device, NULL, NULL);
-  g_assert_cmpint (fp_device_get_scan_type (tctx->device), ==, FP_SCAN_TYPE_TOUCH);
+  g_assert_cmpint (fp_device_get_scan_type (tctx->device), ==, FP_SCAN_TYPE_PRESS);
 }
 
 static void
